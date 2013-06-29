@@ -110,9 +110,15 @@ PRODUCT_COPY_FILES += \
     vendor/htc/mecha/proprietary/lib/libwsp.so:system/lib/libwsp.so \
     vendor/htc/mecha/proprietary/xbin/wireless_modem:system/xbin/wireless_modem \
     vendor/htc/mecha/proprietary/lib/libwvm.so:system/lib/libwvm.so \
+    vendor/htc/mecha/proprietary/lib/libDivxDrm.so:system/lib/libDivxDrm.so \
     vendor/htc/mecha/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
+    vendor/htc/mecha/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
+    vendor/htc/mecha/proprietary/lib/libmmparser_divxdrmlib.so:system/lib/libmmparser_divxdrmlib.so \
+    vendor/htc/mecha/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
     vendor/htc/mecha/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
     vendor/htc/mecha/proprietary/lib/libv8.so:system/lib/libv8.so \
+    vendor/htc/mecha/proprietary/lib/libcneapiclient.so:system/lib/libcneapiclient.so \
+    vendor/htc/mecha/proprietary/lib/libcneqmiutils.so:system/lib/libcneqmiutils.so \
     vendor/htc/mecha/proprietary/lib/libdiag.so:system/lib/libdiag.so \
     vendor/htc/mecha/proprietary/lib/libdnshostprio.so:system/lib/libdnshostprio.so \
     vendor/htc/mecha/proprietary/lib/libnetmonitor.so:system/lib/libnetmonitor.so \
@@ -120,6 +126,11 @@ PRODUCT_COPY_FILES += \
     vendor/htc/mecha/proprietary/lib/pp_proc_plugin.so:system/lib/pp_proc_plugin.so \
     vendor/htc/mecha/proprietary/lib/qnet-plugin.so:system/lib/qnet-plugin.so \
     vendor/htc/mecha/proprietary/lib/tcp-connections.so:system/lib/tcp-connections.so \
+    vendor/htc/mecha/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
+    vendor/htc/mecha/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
+    vendor/htc/mecha/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
+    vendor/htc/mecha/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
+    vendor/htc/mecha/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
     vendor/htc/mecha/proprietary/lib/egl/egl.cfg:system/lib/egl/egl.cfg \
     vendor/htc/mecha/proprietary/lib/egl/eglsubAndroid.so:system/lib/egl/eglsubAndroid.so \
     vendor/htc/mecha/proprietary/lib/egl/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \
