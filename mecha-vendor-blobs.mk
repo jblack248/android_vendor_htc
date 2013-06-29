@@ -24,7 +24,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES += \
     vendor/htc/mecha/proprietary/lib/libaudioalsa.so:obj/lib/libaudioalsa.so \
-    vendor/htc/mecha/proprietary/lib/libcamera.so:obj/lib/libcamera.so \
+    vendor/htc/mecha/proprietary/lib/hw/camera.default.so:obj/lib/hw/camera.default.so \
     vendor/htc/mecha/proprietary/lib/libqc-opt.so:obj/lib/libqc-opt.so \
     vendor/htc/mecha/proprietary/lib/libril.so:obj/lib/libril.so \
     vendor/htc/mecha/proprietary/lib/libv8.so:obj/lib/libv8.so
@@ -42,10 +42,28 @@ PRODUCT_COPY_FILES += \
     vendor/htc/mecha/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/htc/mecha/proprietary/bin/awb_camera:system/bin/awb_camera \
     vendor/htc/mecha/proprietary/bin/lsc_camera:system/bin/lsc_camera \
-    vendor/htc/mecha/proprietary/lib/libcamera.so:system/lib/libcamera.so \
+    vendor/htc/mecha/proprietary/lib/hw/camera.default.so:system/lib/hw/camera.default.so \
+    vendor/htc/mecha/proprietary/lib/libcameraface.so:system/lib/libcameraface.so \
+    vendor/htc/mecha/proprietary/lib/libcamerapp.so:system/lib/libcamerapp.so \
+    vendor/htc/mecha/proprietary/lib/libchromatix_ov8810_default_video.so:system/lib/libchromatix_ov8810_default_video.so \
+    vendor/htc/mecha/proprietary/lib/libchromatix_ov8810_preview.so:system/lib/libchromatix_ov8810_preview.so \
+    vendor/htc/mecha/proprietary/lib/libchromatix_ov8830_default_video.so:system/lib/libchromatix_ov8830_default_video.so \
+    vendor/htc/mecha/proprietary/lib/libchromatix_ov8830_hfr.so:system/lib/libchromatix_ov8830_hfr.so \
+    vendor/htc/mecha/proprietary/lib/libchromatix_ov8830_preview.so:system/lib/libchromatix_ov8830_preview.so \
+    vendor/htc/mecha/proprietary/lib/libchromatix_s5k3h1gx_default_video.so:system/lib/libchromatix_s5k3h1gx_default_video.so \
+    vendor/htc/mecha/proprietary/lib/libchromatix_s5k3h1gx_preview.so:system/lib/libchromatix_s5k3h1gx_preview.so \
+    vendor/htc/mecha/proprietary/lib/libchromatix_s5k3h2yx_default_video.so:system/lib/libchromatix_s5k3h2yx_default_video.so \
+    vendor/htc/mecha/proprietary/lib/libchromatix_s5k3h2yx_hfr.so:system/lib/libchromatix_s5k3h2yx_hfr.so \
+    vendor/htc/mecha/proprietary/lib/libchromatix_s5k3h2yx_preview.so:system/lib/libchromatix_s5k3h2yx_preview.so \
+    vendor/htc/mecha/proprietary/lib/libchromatix_s5k4e1gx_default_video.so:system/lib/libchromatix_s5k4e1gx_default_video.so \
+    vendor/htc/mecha/proprietary/lib/libchromatix_s5k4e1gx_preview.so:system/lib/libchromatix_s5k4e1gx_preview.so \
+    vendor/htc/mecha/proprietary/lib/libchromatix_s5k4e5yx_default_video.so:system/lib/libchromatix_s5k4e5yx_default_video.so \
+    vendor/htc/mecha/proprietary/lib/libchromatix_s5k4e5yx_hfr.so:system/lib/libchromatix_s5k4e5yx_hfr.so \
+    vendor/htc/mecha/proprietary/lib/libchromatix_s5k4e5yx_preview.so:system/lib/libchromatix_s5k4e5yx_preview.so \
     vendor/htc/mecha/proprietary/lib/libmmipl.so:system/lib/libmmipl.so \
     vendor/htc/mecha/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
     vendor/htc/mecha/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so \
+    vendor/htc/mecha/proprietary/lib/libOlaEngine.so:system/lib/libOlaEngine.so \
     vendor/htc/mecha/proprietary/lib/libposteffect.so:system/lib/libposteffect.so \
     vendor/htc/mecha/proprietary/bin/btld:system/bin/btld \
     vendor/htc/mecha/proprietary/bin/dmagent:system/bin/dmagent \
@@ -60,6 +78,7 @@ PRODUCT_COPY_FILES += \
     vendor/htc/mecha/proprietary/lib/libdll.so:system/lib/libdll.so \
     vendor/htc/mecha/proprietary/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
     vendor/htc/mecha/proprietary/lib/libdsm.so:system/lib/libdsm.so \
+    vendor/htc/mecha/proprietary/lib/libdss.so:system/lib/libdss.so \
     vendor/htc/mecha/proprietary/lib/libdsutils.so:system/lib/libdsutils.so \
     vendor/htc/mecha/proprietary/lib/libgsdi_exp.so:system/lib/libgsdi_exp.so \
     vendor/htc/mecha/proprietary/lib/libgstk_exp.so:system/lib/libgstk_exp.so \
@@ -83,21 +102,17 @@ PRODUCT_COPY_FILES += \
     vendor/htc/mecha/proprietary/lib/libril-qc-1.so:system/lib/libril-qc-1.so \
     vendor/htc/mecha/proprietary/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
     vendor/htc/mecha/proprietary/lib/libril.so:system/lib/libril.so \
+    vendor/htc/mecha/proprietary/lib/libuim.so:system/lib/libuim.so \
     vendor/htc/mecha/proprietary/lib/libwms_fusion.so:system/lib/libwms_fusion.so \
     vendor/htc/mecha/proprietary/lib/libwms.so:system/lib/libwms.so \
     vendor/htc/mecha/proprietary/lib/libwmsts.so:system/lib/libwmsts.so \
     vendor/htc/mecha/proprietary/lib/libwsp_jni.so:system/lib/libwsp_jni.so \
     vendor/htc/mecha/proprietary/lib/libwsp.so:system/lib/libwsp.so \
     vendor/htc/mecha/proprietary/xbin/wireless_modem:system/xbin/wireless_modem \
-    vendor/htc/mecha/proprietary/lib/libDivxDrm.so:system/lib/libDivxDrm.so \
+    vendor/htc/mecha/proprietary/lib/libwvm.so:system/lib/libwvm.so \
     vendor/htc/mecha/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
-    vendor/htc/mecha/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
-    vendor/htc/mecha/proprietary/lib/libmmparser_divxdrmlib.so:system/lib/libmmparser_divxdrmlib.so \
-    vendor/htc/mecha/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
     vendor/htc/mecha/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
     vendor/htc/mecha/proprietary/lib/libv8.so:system/lib/libv8.so \
-    vendor/htc/mecha/proprietary/lib/libcneapiclient.so:system/lib/libcneapiclient.so \
-    vendor/htc/mecha/proprietary/lib/libcneqmiutils.so:system/lib/libcneqmiutils.so \
     vendor/htc/mecha/proprietary/lib/libdiag.so:system/lib/libdiag.so \
     vendor/htc/mecha/proprietary/lib/libdnshostprio.so:system/lib/libdnshostprio.so \
     vendor/htc/mecha/proprietary/lib/libnetmonitor.so:system/lib/libnetmonitor.so \
@@ -105,11 +120,6 @@ PRODUCT_COPY_FILES += \
     vendor/htc/mecha/proprietary/lib/pp_proc_plugin.so:system/lib/pp_proc_plugin.so \
     vendor/htc/mecha/proprietary/lib/qnet-plugin.so:system/lib/qnet-plugin.so \
     vendor/htc/mecha/proprietary/lib/tcp-connections.so:system/lib/tcp-connections.so \
-    vendor/htc/mecha/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
-    vendor/htc/mecha/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
-    vendor/htc/mecha/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
-    vendor/htc/mecha/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
-    vendor/htc/mecha/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
     vendor/htc/mecha/proprietary/lib/egl/egl.cfg:system/lib/egl/egl.cfg \
     vendor/htc/mecha/proprietary/lib/egl/eglsubAndroid.so:system/lib/egl/eglsubAndroid.so \
     vendor/htc/mecha/proprietary/lib/egl/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \
