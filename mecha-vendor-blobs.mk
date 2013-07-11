@@ -111,9 +111,17 @@ PRODUCT_COPY_FILES += \
     vendor/htc/mecha/proprietary/lib/libwvm.so:system/lib/libwvm.so \
     vendor/htc/mecha/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
     vendor/htc/mecha/proprietary/lib/libv8.so:system/lib/libv8.so \
-    vendor/htc/mecha/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
-    vendor/htc/mecha/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
-    vendor/htc/mecha/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
+    vendor/htc/mecha/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
+    vendor/htc/mecha/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
+    vendor/htc/mecha/proprietary/etc/firmware/vidc_720p_command_control.fw:system/etc/firmware/vidc_720p_command_control.fw \
+    vendor/htc/mecha/proprietary/etc/firmware/vidc_720p_h263_dec_mc.fw:system/etc/firmware/vidc_720p_h263_dec_mc.fw \
+    vendor/htc/mecha/proprietary/etc/firmware/vidc_720p_h264_dec_mc.fw:system/etc/firmware/vidc_720p_h264_dec_mc.fw \
+    vendor/htc/mecha/proprietary/etc/firmware/vidc_720p_h264_enc_mc.fw:system/etc/firmware/vidc_720p_h264_enc_mc.fw \
+    vendor/htc/mecha/proprietary/etc/firmware/vidc_720p_mp4_dec_mc.fw:system/etc/firmware/vidc_720p_mp4_dec_mc.fw \
+    vendor/htc/mecha/proprietary/etc/firmware/vidc_720p_mp4_enc_mc.fw:system/etc/firmware/vidc_720p_mp4_enc_mc.fw \
+    vendor/htc/mecha/proprietary/etc/firmware/vidc_720p_vc1_dec_mc.fw:system/etc/firmware/vidc_720p_vc1_dec_mc.fw \
+    vendor/htc/mecha/proprietary/etc/firmware/yamato_pfp.fw:system/etc/firmware/yamato_pfp.fw \
+    vendor/htc/mecha/proprietary/etc/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw \
     vendor/htc/mecha/proprietary/lib/egl/egl.cfg:system/lib/egl/egl.cfg \
     vendor/htc/mecha/proprietary/lib/egl/eglsubAndroid.so:system/lib/egl/eglsubAndroid.so \
     vendor/htc/mecha/proprietary/lib/egl/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \
