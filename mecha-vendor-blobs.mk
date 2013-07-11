@@ -82,6 +82,7 @@ PRODUCT_COPY_FILES += \
     vendor/htc/mecha/proprietary/lib/libdsutils.so:system/lib/libdsutils.so \
     vendor/htc/mecha/proprietary/lib/libgsdi_exp.so:system/lib/libgsdi_exp.so \
     vendor/htc/mecha/proprietary/lib/libgstk_exp.so:system/lib/libgstk_exp.so \
+    vendor/htc/mecha/proprietary/lib/libhtc_ril_switch.so:system/lib/libhtc_ril_switch.so \
     vendor/htc/mecha/proprietary/lib/libidl.so:system/lib/libidl.so \
     vendor/htc/mecha/proprietary/lib/libmmgsdilib.so:system/lib/libmmgsdilib.so \
     vendor/htc/mecha/proprietary/lib/libnetmgr.so:system/lib/libnetmgr.so \
@@ -109,6 +110,9 @@ PRODUCT_COPY_FILES += \
     vendor/htc/mecha/proprietary/lib/libwsp_jni.so:system/lib/libwsp_jni.so \
     vendor/htc/mecha/proprietary/lib/libwsp.so:system/lib/libwsp.so \
     vendor/htc/mecha/proprietary/lib/libwvm.so:system/lib/libwvm.so \
+    vendor/htc/mecha/proprietary/lib/libWVStreamControlAPI_L3.so:system/lib/libWVStreamControlAPI_L3.so \
+    vendor/htc/mecha/proprietary/lib/libwebkitaccel.so:system/lib/libwebkitaccel.so \
+    vendor/htc/mecha/proprietary/lib/libwvdrm_L3.so:system/lib/libwvdrm_L3.so \
     vendor/htc/mecha/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
     vendor/htc/mecha/proprietary/lib/libv8.so:system/lib/libv8.so \
     vendor/htc/mecha/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
