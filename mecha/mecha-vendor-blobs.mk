@@ -44,7 +44,6 @@ PRODUCT_COPY_FILES += \
     vendor/htc/mecha/proprietary/bin/ipd:system/bin/ipd \
     vendor/htc/mecha/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/htc/mecha/proprietary/bin/qmuxd:system/bin/qmuxd \
-    vendor/htc/mecha/proprietary/bin/tc:system/bin/tc \
     vendor/htc/mecha/proprietary/lib/libauth.so:system/lib/libauth.so \
     vendor/htc/mecha/proprietary/lib/libcm_fusion.so:system/lib/libcm_fusion.so \
     vendor/htc/mecha/proprietary/lib/libcm.so:system/lib/libcm.so \
@@ -56,7 +55,6 @@ PRODUCT_COPY_FILES += \
     vendor/htc/mecha/proprietary/lib/libdsutils.so:system/lib/libdsutils.so \
     vendor/htc/mecha/proprietary/lib/libgsdi_exp.so:system/lib/libgsdi_exp.so \
     vendor/htc/mecha/proprietary/lib/libgstk_exp.so:system/lib/libgstk_exp.so \
-    vendor/htc/mecha/proprietary/lib/libhtc_ril_switch.so:system/lib/libhtc_ril_switch.so \
     vendor/htc/mecha/proprietary/lib/libidl.so:system/lib/libidl.so \
     vendor/htc/mecha/proprietary/lib/libmmgsdilib.so:system/lib/libmmgsdilib.so \
     vendor/htc/mecha/proprietary/lib/libnetmgr.so:system/lib/libnetmgr.so \
